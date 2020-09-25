@@ -30,6 +30,8 @@ export default createGlobalStyle`
         --leftside: #212121;
         --header: #212121fa;
         --main: #181818;
+        --input-background: #121212;
+        --input-border: #303030;
         --primary: #fff;
         --secondary: #aaa;
         --login-button: #3ea6ff;
