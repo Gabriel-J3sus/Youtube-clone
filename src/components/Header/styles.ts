@@ -16,9 +16,8 @@ export const Container = styled.div`
   position: fixed;
 
   background: var(--header);
-`;
 
-export const LeftSide = styled.div`
+  .left-side {
     display: flex;
     align-items: center;
     height: 100%;
@@ -27,6 +26,70 @@ export const LeftSide = styled.div`
         font-size: 25px;
         color: var(--primary);
     }
+
+    > button {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        padding: 8px;
+        cursor: pointer;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 728px;
+
+    > button {
+        width: 80px;
+        height: 30px;
+        padding: 1px 6px;
+        border: 1px solid var(--input-border);
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 0 2px 2px 0;
+        margin: 0;
+        cursor: pointer; 
+    }
+  }
+
+  .right-side {
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    button {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        
+        cursor: pointer;
+    }
+
+    button:nth-child(4) {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 40px;
+        padding: 5px 11px;
+
+        text-transform: uppercase;
+        
+        border: 1px solid var(--login-button);
+
+        > span {
+            margin-left: 8px;
+            color: var(--login-button);
+            font-size: 14px;
+            font-weight: 500;
+            
+            display: block;
+           
+        }
+    }
+  }
 `;
 
 const iconCSS = css`
@@ -36,12 +99,8 @@ const iconCSS = css`
 `;
 
 export const SelectionIcon = styled(MdDehaze)`
-    height: 40px;
-    width: 40px;
+    ${iconCSS}
     fill: var(--primary);
-    margin-right: 16px;
-    padding: 8px;
-    cursor: pointer;
     
 `;
 
@@ -50,11 +109,6 @@ export const YoutubeLogo = styled(AiFillYoutube)`
     fill: var(--logo);
 `;
 
-export const Center = styled.div`
-    display: flex;
-    justify-content: center;
-    flex: 0 1 728px;
-`;
 
 export const InputContainer = styled.div`
     padding: 2px 6px;
@@ -109,17 +163,6 @@ export const KeyboardIcon = styled(FaKeyboard)`
     }
 `;
 
-export const Button = styled.button`
-    width: 80px;
-    height: 30px;
-    padding: 1px 6px;
-    border: 1px solid var(--input-border);
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 0 2px 2px 0;
-    margin: 0;
-    cursor: pointer;    
-`;
-
 export const SearchIcon = styled(AiOutlineSearch)`
     width: 20px;
     height: 20px;
@@ -133,44 +176,6 @@ export const SearchIcon = styled(AiOutlineSearch)`
     }
 `;
 
-export const RightSide = styled.div`
-    min-width: 225px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-
-    button {
-        width: 40px;
-        height: 40px;
-        padding: 8px;
-        
-        cursor: pointer;
-    }
-
-    button:nth-child(4) {
-        display: flex;
-        align-items: center;
-        width: auto;
-        height: 40px;
-        padding: 5px 11px;
-
-        text-transform: uppercase;
-        
-        border: 1px solid var(--login-button);
-
-        > span {
-            margin-left: 8px;
-            color: var(--login-button);
-            font-size: 14px;
-            font-weight: 500;
-            
-            display: block;
-           
-        }
-    }
-
-`;
 
 export const CreateIcon = styled(RiVideoAddFill)`
     ${iconCSS}

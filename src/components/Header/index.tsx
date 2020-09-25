@@ -2,16 +2,12 @@ import React from 'react';
 
 import { 
     Container,
-    LeftSide,
     SelectionIcon,
     YoutubeLogo,
-    Center,
     InputContainer,
     Input,
     KeyboardIcon,
-    Button,
     SearchIcon,
-    RightSide,
     CreateIcon,
     AppsIcon,
     ConfigIcon,
@@ -21,28 +17,26 @@ import {
 const Header: React.FC = () => {
   return (
       <Container>
-        <LeftSide>
+        <div className="left-side">
           <button>
             <SelectionIcon />
           </button>
             <YoutubeLogo />
             <h2>Youtube</h2>
-        </LeftSide>
+        </div>
         
-        <Center>
+        <div className="center">
           <InputContainer>
             <Input placeholder="Pesquisar" />
             <KeyboardIcon />
           </InputContainer>
             
-          <Button>
-            
-            <SearchIcon />
-            
-          </Button>
-        </Center>
+          <button>
+            <SearchIcon />    
+          </button>
+        </div>
         
-        <RightSide>
+        <div className="right-side">
           <button>
             <CreateIcon />
           </button>
@@ -56,7 +50,7 @@ const Header: React.FC = () => {
             <UserIcon />
             <span> fazer login </span>
           </button>
-        </RightSide>
+        </div>
       </Container>
   );
 }
