@@ -31,6 +31,7 @@ export default createGlobalStyle`
         --header: #212121fa;
         --main: #181818;
         --input-background: #121212;
+        --icon: #909090;
         --input-border: #303030;
         --primary: #fff;
         --secondary: #aaa;

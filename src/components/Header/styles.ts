@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 import { AiFillYoutube, AiOutlineSearch } from 'react-icons/ai';
 import { RiVideoAddFill } from 'react-icons/ri';
-import { HiUserCircle } from 'react-icons/hi';
 import { MdDehaze, MdApps, MdMoreVert } from 'react-icons/md';
 import { FaKeyboard } from 'react-icons/fa';
 
@@ -11,6 +10,9 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0px 16px;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 56px;
   width: 100%;
   position: fixed;
@@ -66,28 +68,6 @@ export const Container = styled.div`
         padding: 8px;
         
         cursor: pointer;
-    }
-
-    button:nth-child(4) {
-        display: flex;
-        align-items: center;
-        width: auto;
-        height: 40px;
-        padding: 5px 11px;
-
-        text-transform: uppercase;
-        
-        border: 1px solid var(--login-button);
-
-        > span {
-            margin-left: 8px;
-            color: var(--login-button);
-            font-size: 14px;
-            font-weight: 500;
-            
-            display: block;
-           
-        }
     }
   }
 `;
@@ -192,10 +172,4 @@ export const ConfigIcon = styled(MdMoreVert)`
     fill: var(--primary);
 `;
 
-export const UserIcon = styled(HiUserCircle)`
-    width: 30px;
-    height: 30px;
-    fill: var(--login-button);
-    flex-shrink: 0;  
-`;
 

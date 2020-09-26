@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LoginButton from '../LoginButton';
+
 import { 
     Container,
     SelectionIcon,
@@ -11,7 +13,6 @@ import {
     CreateIcon,
     AppsIcon,
     ConfigIcon,
-    UserIcon,
 } from './styles';
 
 const Header: React.FC = () => {
@@ -46,10 +47,9 @@ const Header: React.FC = () => {
           <button>
             <ConfigIcon />
           </button>  
-          <button>
-            <UserIcon />
-            <span> fazer login </span>
-          </button>
+          
+          <LoginButton />
+          
         </div>
       </Container>
   );
