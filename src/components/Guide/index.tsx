@@ -3,7 +3,6 @@ import React from 'react';
 import LoginButton from '../LoginButton';
 import { 
     Container,
-    Wrapper,
     HomeIcon,
     FireIcon,
     SubscribeIcon,
@@ -28,7 +27,6 @@ import {
 const Guide: React.FC = () => {
   return (
       <Container>
-          <Wrapper>
             <ul>
                 <li className="active">
                     <div>
@@ -67,18 +65,18 @@ const Guide: React.FC = () => {
             </ul>
             <ul>
                 <li>
+                    <p> 
+                        Faça login para curtir <br />vídeos, comentar e se <br />inscrever.
+                    </p>
+                    
                     <span>
-                        Faça login para curtir vídeos, comentar e se inscrever.
+                        <LoginButton />
                     </span>
                 </li>
-                <li>
-                    <LoginButton />
-                </li>
-                
             </ul>
             <ul>
                 <li>
-                    <p> O melhor do youtube </p>
+                    O melhor do youtube
                 </li>
                 <li>
                     <div>
@@ -147,7 +145,7 @@ const Guide: React.FC = () => {
             </ul>
             <ul>
                 <li>
-                    <p> Mais do Youtube </p>
+                    Mais do Youtube
                 </li>
                 <li>
                     <div>
@@ -201,7 +199,6 @@ const Guide: React.FC = () => {
                 <li></li>
                 <li></li>
             </ul>
-          </Wrapper>
       </Container>
   );
 }
