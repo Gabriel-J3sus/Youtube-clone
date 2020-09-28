@@ -1,8 +1,8 @@
 import React from 'react';
 
+import Menu from './Pages/Menu';
 import Header from './components/Header';
-import Guide from './components/Guide';
-
+import Guide from './components/Guide'; 
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
@@ -10,7 +10,8 @@ function App() {
     <>
       <Header />
       <Guide />
-      
+      <Menu />
+
       <GlobalStyles />
     </>
   );

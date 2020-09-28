@@ -12,12 +12,14 @@ import { RiFeedbackFill, RiFilmFill } from 'react-icons/ri';
 
 export const Container = styled.div`
     margin-top: 4.0%;
-    max-height: 100vh;
+    max-height: 100%;
     max-width: 19%;
-    display: block;
+
     top: 1px;
     right: 0;
+    bottom: 0;
     left: 0;
+    
     overflow-y: scroll;
     position: fixed;
     
@@ -51,23 +53,17 @@ export const Container = styled.div`
                 
                 cursor: pointer;
             }
-
-            footer {
-                width: fit-content;
-                display: flex;
-                color: var(--secondary);
-            }
         }
     }
 
     ul:nth-child(3) {
         padding: 16px 32px;
-        width: fit-content;
+        
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
         li {
           padding: 0;
-          
+          width: fit-content;
           display: flex;
           flex-direction: column;
           
@@ -85,7 +81,7 @@ export const Container = styled.div`
 
     ul:nth-child(4), ul:nth-child(6) {
         padding: 8px 0;
-        width: fit-content;
+        
 
         li:nth-child(1) {
             width: fit-fit-content;
@@ -94,10 +90,80 @@ export const Container = styled.div`
             font-weight: 500;
             letter-spacing: 0.007px;
             text-transform: uppercase;
-
+            width: fit-content;
+            
             color: var(--secondary);
+        }        
+    }
+
+    ul:last-child {
+        padding: 0;
+        border-bottom: none;
+        
+        div:nth-child(1) {
+            padding: 16px 24px 0;
+
+            p:nth-child(1), p:last-child {
+                word-spacing: 8px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                color: var(--secondary);
+                margin-right: 8px;
+                white-space: nowrap;
+            }
+        }
+
+        div:nth-child(2) {
+            padding: 16px 24px 0;
+
+            p:nth-child(1) {
+                word-spacing: 8px;
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                color: var(--secondary);
+                margin-right: 8px;
+                white-space: nowrap;
+            }
+
+            p:last-child {
+                margin-right: 0;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                color: var(--secondary);
+                white-space: nowrap;
+            }
+        }
+
+        span {
+            width: fit-content;
+            padding: 16px 24px;
+            color: #717171;
+            font-size: 13px;
+            font-weight: 400;
         }
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255,255,255,0.08);     
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--leftside);
+    }
+
 `;
 
 const iconCSS = css`

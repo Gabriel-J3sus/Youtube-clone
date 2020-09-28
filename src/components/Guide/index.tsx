@@ -189,15 +189,21 @@ const Guide: React.FC = () => {
 
             </ul>
             <ul>
-                <li>
-                    <footer>
-                        <p> SobreImprensaDireitos autoraisEntre em contatoCriadores de conteúdoPublicidadeDesenvolvedores </p>
-                        <p> TermosPrivacidadePolítica e SegurançaComo funciona o YouTubeTestar os novos recursos </p>
-                        <p>© 2020 Jesus company</p>
-                    </footer>
-                </li>
-                <li></li>
-                <li></li>
+                <div>
+                    <p> Sobre Imprensa</p> 
+                    <p> Direitos autorais </p> 
+                    <p> Entre em contato </p>
+                    <p> Criadores de conteúdo </p>
+                    <p>Publicidade Desenvolvedores </p>
+                </div>
+                <div>
+                    <p> Termos Privacidade </p>
+                    <p> Política e Segurança </p>
+                    <p> Como funciona o YouTube </p>
+                    <p>Testar os novos recursos </p>
+                </div>
+                <br />
+                <span>© 2020 Jesus company</span>
             </ul>
       </Container>
   );
