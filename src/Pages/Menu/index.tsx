@@ -10,7 +10,19 @@ const Menu: React.FC = () => {
       <Separator />
       <Wrapper>
         <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />
+        <VideoCard />      
       </Wrapper>
+      
       <Separator />
     </Container>
   );
