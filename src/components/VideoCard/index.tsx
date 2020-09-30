@@ -10,23 +10,21 @@ const VideoCard: React.FC = () => {
           <VideoImage />
           
           <VideoData>
-            
             <div>
               <Avatar />
               <span> Titulo do video </span>
             </div>
-
-            <p> 
-              Canal
-              <CheckIcon />
-            </p>
-            <span> 30 mil visualizações <span>•</span> </span>
-            <span> há 2 horas</span>
-
+            
+            <div>
+              <p> 
+                Canal
+                <CheckIcon />
+              </p>
+              30 mil visualizações •
+              há 2 horas
+            </div>
           </VideoData>
-
         </Wrapper>
-
       </Container>
   );
 }

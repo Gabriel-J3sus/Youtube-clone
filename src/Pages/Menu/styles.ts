@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
     max-width: calc(4 * 320px + 16px);
     width: calc(100% - 16px * 2);
     margin-top: 24px;
-    
+            
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
